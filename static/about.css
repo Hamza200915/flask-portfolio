@@ -1,0 +1,147 @@
+/* About Container */
+.about-container {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* About Section Title */
+.about-container h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Personal Details Section */
+.about-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+.about-section strong {
+    color: #4a90e2;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.skills-section ul li {
+    margin-bottom: 10px;
+}
+
+.skills-section strong {
+    color: #4a90e2;
+}
+
+/* Football Section */
+.football-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+.football-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.football-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contacts Section */
+.contacts-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+.contacts-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contacts-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.contacts-section ul li {
+    margin-bottom: 10px;
+}
+
+.contacts-section strong {
+    color: #4a90e2;
+}
+
+.contacts-section a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.contacts-section a:hover {
+    text-decoration: underline;
+}

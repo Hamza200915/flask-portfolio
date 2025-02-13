@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <!-- Linking the about.css file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    </head>
+
+    <section class="about-container">
+        <h1>About Me</h1>
+        <p class="intro">
+            Hello! I'm Hamza, a passionate 16-year-old Python developer from Rawalpindi, Pakistan. I specialize in creating software and web applications. I began my coding journey in 2024 and have been honing my skills in Python, web development, and problem-solving ever since.
+        </p>
+
+        <!-- Personal Details Section -->
+        <div class="about-section">
+            <h2>Personal Details</h2>
+            <ul>
+                <li><strong>Age:</strong> 16</li>
+                <li><strong>Location:</strong> Rawalpindi, Pakistan</li>
+                <li><strong>Education:</strong> Currently doing O Levels</li>
+                <li><strong>Started Coding:</strong> September 2024</li>
+            </ul>
+        </div>
+
+        <!-- Skills & Technologies Section -->
+        <div class="skills-section">
+            <h2>Skills & Technologies</h2>
+            <ul>
+                <li><strong>Python:</strong> Expertise in backend development, automation tasks, and problem-solving.</li>
+                <li><strong>GitHub:</strong> Proficient in version control and managing collaborative projects.</li>
+            </ul>
+        </div>
+
+        <!-- Football Experience Section -->
+        <div class="football-section">
+            <h2>Football Experience</h2>
+            <p>
+                Apart from coding, I'm also passionate about football, where I play as a goalkeeper. I've won both the Total Junior League (U20) and the Youth League (U18), learning valuable lessons in discipline, teamwork, and strategy—skills that I bring to my development work.
+            </p>
+        </div>
+
+        <!-- Contacts Section -->
+        <div class="contacts-section">
+            <h2>Contacts</h2>
+            <ul>
+                <li><strong>Instagram:</strong> Hamzagk_1</li>
+                <li><strong>Email:</strong> <a href="mailto:hamzawajeeh80@gmail.com">hamzawajeeh80@gmail.com</a></li>
+            </ul>
+        </div>
+
+    </section>
+{% endblock %}

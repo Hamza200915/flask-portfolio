@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="home-container">
+        <h1>Welcome to My Portfolio</h1>
+
+        <!-- Profile Section with Squared Image and Text -->
+        <div class="profile-container">
+            <img src="{{ url_for('static', filename='images/pfp.jpg') }}" alt="Hamza">
+            <div class="text">
+                <h2>Hi! I'm Hamza</h2>
+                <p><strong>Python Developer | Football Goalkeeper</strong></p>
+                <p>🏆 Winner of U18 & U20 Youth Leagues</p>
+                <p>🚀 Creator of Orbit by Hamza & To-Do List</p>
+                <p>💻 Passionate about coding & football</p>
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <h2 class="projects-heading">My Projects</h2>
+        <div class="projects-achievements">
+            <a href="https://github.com/Hamza200915/my-python-project/blob/master/orbit%20by%20hamza.py" target="_blank">
+                <div class="project-box" id="orbit">
+                    <p>Orbit by Hamza</p>
+                    <!-- Image below the text -->
+                    <div class="orbit-image"></div>
+                </div>
+            </a>
+            <a href="https://github.com/Hamza200915/my-python-project/blob/master/to%20do%20list.py" target="_blank">
+                <div class="project-box" id="todo">
+                    <p>To-Do List</p>
+                    <!-- Image below the text -->
+                    <div class="todo-image"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,257 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #060;
+    background-color: #fff;
+}
+
+/* Header Styling */
+header {
+    background-color: #F4D6A0; /* Skin-tone background */
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+    position: relative; /* Ensure parent has relative positioning */
+    margin-top: 0px; /* Add this to push the header down */
+}
+
+
+/* Logo Styling */
+header h1.brand-name {
+    font-size: 2rem;
+    color: #000;
+    text-transform: capitalize;
+    margin-left: 10px;
+    position: relative; /* Ensure it's positioned relative to its normal position */
+    left:-10px;
+    top: 15px;  /* Adjust to move the text down */
+}
+
+
+
+/* Navigation Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.menu li {
+    margin-left: 25px;
+}
+
+/* Menu Links */
+.menu li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.menu li a:hover {
+    color: #FF6347; /* Orange color when hovering */
+}
+
+/* Section Styling for Main Content */
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between image and text */
+    margin-top: 40px;
+    flex-direction: column;
+    text-align: center; /* Align the text in the center */
+}
+
+/* Profile Image */
+.profile-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid #4a90e2; /* Border color for image */
+}
+
+/* Profile Text */
+.profile-container .text {
+    color: #333; /* Text color */
+}
+
+.profile-container .text h2 {
+    font-size: 2.2rem;
+    color: #4a90e2; /* Profile title color */
+    margin-bottom: 10px;
+}
+
+.profile-container .text p {
+    font-size: 1.1rem;
+    color: #666; /* Text color for description */
+    margin-bottom: 10px;
+}
+
+/* Profile Text Highlight for Important Info */
+.profile-container .text p strong {
+    color: #4a90e2; /* Highlighted text color */
+    font-weight: bold;
+}
+
+/* Background Styling for Profile Section */
+.profile-container {
+    background-color: #f4f4f4; /* Light gray background for the profile section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Styling */
+.about-section {
+    background: linear-gradient(to right, #dcdcdc, #f4f4f4); /* Soft gradient background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* About Title */
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #4a90e2; /* Keep your blue color for consistency */
+    margin-bottom: 20px;
+}
+
+/* About Text */
+.about-section p {
+    font-size: 1.2rem;
+    color: #555; /* Dark grey for body text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Accent for Important Info */
+.about-section p strong {
+    color: #FF6347; /* Orange to highlight key points */
+    font-weight: bold;
+}
+
+/* Add some icon styling if needed */
+.about-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.about-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+.projects-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 50px;
+}
+
+/* Project Box Layout */
+.projects-achievements {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-direction: row; /* Horizontal layout */
+}
+
+/* Project Boxes */
+.project-box {
+    width: 300px; /* Wider width for horizontal rectangle */
+    height: 200px; /* Reduced height for horizontal layout */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Orbit Background Image */
+.orbit-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/images/background_orbit.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    z-index: -1; /* Keeps the image behind the text */
+}
+
+/* To-Do List Background Image */
+.todo-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/images/backgruond_to-do_list.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    z-index: -1; /* Keeps the image behind the text */
+}
+
+/* Hover Effect for Project Boxes */
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+/* Text Shadow for Better Visibility */
+.project-box p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Welcome Text Styling */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Ensuring Content Is Centered */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
